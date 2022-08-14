@@ -1,0 +1,184 @@
+ù/* Formulaire d'inscription */
+
+.geleves-cont-form-inscription * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section.geleves-cont-form-inscription {
+    min-width: 100%;
+    max-width: 100% !important;
+    background-color: #0001;
+    padding: 30px;
+    overflow: hidden;
+    position: relative;
+}
+
+.inscript-form {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    position: relative;
+    transition: .6s;
+    transform: translateY(0rem);
+}
+.inscript-form.activate {
+    transform: translateY(-200rem);
+}
+
+.cont_left {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cont_left>div:not(.geleves-cont-intruments) {
+    display: flex;
+    flex-direction: column;
+}
+
+.formules {
+    margin: 20px 0;
+}
+
+.type-abonnement {
+    font-size: 25px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.formules>div {
+    margin: 10px 0;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+h4 {
+    font-size: 20px;
+    color: rgb(143, 1, 1);
+}
+
+.formules p {
+    margin: 10px 0 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.geleves-cont-bout-form {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+.geleves-cont-bout-form>button,
+.geleves-cont-bout-form>input[type="reset"] {
+    padding: 10px 25px;
+    background-color: transparent;
+    border: 1px solid #000;
+    transition: .3s;
+    border-radius: 0;
+    color: #000;
+    max-width: 130px;
+    cursor: pointer;
+}
+
+.bout-sub:hover,
+.geleves-cont-bout-form>input[type="reset"]:hover {
+    color: #fff;
+    background-color: #000;
+}
+.bout-sub img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.geleves-souscont-instruments {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 10px;
+}
+
+.geleves-instruments-form {
+    width: 50%;
+}
+
+.cont_left label {
+    font-size: 20px;
+}
+
+.cont_left>div:not(.geleves-cont-intruments) input {
+    height: 50px;
+}
+
+.cont_formules {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.formules input {
+    margin-right: 10px;
+}
+
+.cont_formules>hr {
+    margin: 0 !important;
+}
+
+
+/* Formulaire erreur */
+
+.champ-error{
+    border: 1px solid red;
+}
+
+.message-valid{
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transition: .6s;
+    transform: translateY(200rem) translateX(-50%);
+}
+.message-valid.activate{
+    transform: translateY(0rem) translateX(-50%);
+}
+
+
+
+
+
+#formulaire-connexion{
+    background-color: rgb(226, 226, 226);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+}
+
+#formulaire-connexion input{
+    min-height: 30px;
+}
+#formulaire-connexion button{
+    min-height: 30px;
+    max-width: fit-content;
+    align-self: flex-end;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    padding: 0 15px;
+}
+#formulaire-connexion a{
+    font-size: 16px;
+    margin: 10px 0;
+    align-self: flex-end;
+    text-decoration: none;
+    color: grey;
+}

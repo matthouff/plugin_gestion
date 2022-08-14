@@ -1,0 +1,248 @@
+.post-type-geleves_eleve #titlewrap,
+.post-type-geleves_prof #titlewrap{
+    display: none;
+}
+
+
+
+
+.explication .badge {
+    width: 18px;
+    height: 18px;
+    background-color: #d63638;
+    border-radius: 50%;
+    display: inline-flex;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+   }
+   
+
+
+/* Badge menu wp */
+
+.post-type-geleves_eleve .wp-first-item,.post-type-geleves_prof .wp-first-item,.post-type-geleves_cours .wp-first-item{
+    display: flex;
+    align-items: center;
+}
+#toplevel_page_edit-post_type-geleves_eleve > ul:nth-child(2) > li:nth-child(2) {
+    display: flex;
+    align-items: center;
+   }
+   
+.geleves-badge{
+    padding: 0 !important;
+}
+#toplevel_page_edit-post_type-geleves_eleve .geleves_badge_gen{
+    margin-left: 10px;
+}
+a.geleves-badge {
+ box-shadow: none !important;
+}
+
+.toplevel_page_gestion-eleves .cont-bout-aide-geleves,
+.admin_page_eleves_form .cont-bout-aide-geleves,
+.toplevel_page_gestion-prof .cont-bout-aide-geleves,
+.admin_page_prof_form .cont-bout-aide-geleves,
+.toplevel_page_gestion-cours .cont-bout-aide-geleves,
+.admin_page_cours_form .cont-bout-aide-geleves{
+ display: flex;
+}
+
+
+.toplevel_page_gestion-cours td{
+    font-size: 20px;
+    padding-left: 25px;
+}
+
+
+/* Zone d'aide */
+
+/* section bouton */
+.cont-bout-aide-geleves{
+    background-color: #fff;
+    display: none;
+    justify-content: space-between;
+    box-shadow: 0 0 15px #0004;
+    padding: 0px 50px 0 15px;
+    margin-top: 15px;
+    z-index: 99;
+    position: relative;
+    margin-right: 20px;
+    align-items: center;
+}
+.cont-bout-aide-geleves p, .cont-aide-geleves .geleves_nom_plugin{
+    font-size: 25px;
+    margin: 0;
+    text-align: center;
+    color: #83766d;
+}
+.cont-bout-aide-geleves button{
+    background-color: transparent;
+    padding: 10px 20px;
+    border: 2px solid #83766d;
+    cursor: pointer;
+    color: #83766d;
+    font-size: 14px;
+    font-weight: 600;
+    transition: .2s;
+    height: fit-content;
+}
+.cont-bout-aide-geleves button:hover {
+    background-color: rgba(0, 0, 0, 0.014);
+}
+.cont-bout-aide-geleves button span{
+    opacity: .4;
+    transform: rotate(0);
+    transition: .3s;
+    display: inline-block;
+}
+.cont-bout-aide-geleves button.active span{
+    transform: rotate(180deg);
+}
+.cont-bout-aide-geleves img{
+    height: 75px;
+}
+
+@media screen and (max-width: 1200px){
+    .cont-bout-aide-geleves p{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 960px){
+    .cont-bout-aide-geleves button{
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 782px){
+    .cont-bout-aide-geleves{
+        margin-right: 10px;
+        padding: 15px 15px 15px 0px;
+    }
+    .cont-bout-aide-geleves img{
+        height: 50px;
+    }
+}
+@media screen and (max-width: 600px){
+    .cont-bout-aide-geleves{
+        margin-right: 10px;
+        padding: 50px 15px 10px 0px;
+        margin-top: 0px;
+    }
+}
+
+
+
+
+/* section messages */
+.cont-aide-geleves{
+    background-color: #fff;
+    box-shadow: 0 0 15px #0004;
+    padding: 0 30px;
+    position: relative;
+    overflow: hidden;
+    max-height: 0px;
+    transition: .6s ease-in-out;
+    margin-right: 20px;
+}
+.cont-aide-geleves.active{
+    max-height: 1000px;
+    padding: 40px 30px 60px;
+}
+.cont-aide-geleves .geleves_nom_plugin{
+    display: none;
+}
+
+.cont-aide-geleves p, .cont-aide-geleves li{
+    font-size: 15px;
+}
+.cont-aide-geleves li{
+    list-style-type:decimal;
+}
+.cont-aide-geleves strong{
+    color: rgb(112, 20, 20);
+}
+.cont-aide-geleves .titre-geleves{
+    font-size: 30px;
+}
+.suppr-second-geleves{
+    color: #0006;
+}
+@media screen and (max-width: 782px){
+    .cont-aide-geleves.active{
+        max-height: 1200px;
+        padding: 40px 30px 60px;
+    }
+}
+@media screen and (max-width: 600px){
+    .cont-aide-geleves{
+        padding: 0px 30px 0px;
+    }
+    .cont-aide-geleves.active{
+        padding: 20px 30px 20px;
+    }
+    .cont-aide-geleves .geleves_nom_plugin{
+        display: block;
+        font-weight: bold;
+    }
+    .cont-bout-aide-geleves p{
+        display: none;
+    }
+    #wpbody {
+        padding-top: 0;
+    }
+    .cont-aide-geleves .titre-geleves{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 500px){
+    .cont-aide-geleves.active{
+        max-height: 1500px;
+    }
+}
+@media screen and (max-width: 400px){
+    .cont-aide-geleves.active{
+        max-height: 2000px;
+    }
+}
+
+
+
+
+
+
+/* TABLEAUX ELEVES/PROF/COURS */
+
+
+#eleves-table .wp-list-table{
+    border: none;
+    box-shadow: 0 0 15px #0002;
+    border-radius: 20px;
+}
+#eleves-table .wp-list-table tbody tr:nth-of-type(odd){
+    background-color: #fff;
+    background-color: #8b674d1c;
+}
+#eleves-table .wp-list-table tr td {
+    color: #83766d;
+    font-weight: 600;
+}
+#eleves-table .wp-list-table th{
+    padding:20px 10px;
+    color: #0003;
+    font-weight: bold;
+}
+#eleves-table .wp-list-table th a{
+    padding:20px 10px;
+    color: rgba(0, 118, 173, 0.521);
+    font-weight: 600;
+}
+.post-type-geleves_eleve #valid {
+    background-color: rgb(245, 242, 239);
+    color: #83766d;
+    font-weight: 600;
+    box-shadow: 0 0 5px #0002 inset;
+}
+
